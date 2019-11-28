@@ -5,14 +5,52 @@ let rosterBtn = document.getElementById("roster-btn")
 lootBtn.addEventListener('click', showLootRules)
 rosterBtn.addEventListener('click', showRegisteredMembers)
 
+let lootRules = document.getElementById('loot-rules')
+let members = document.getElementById('members')
 function showLootRules(){
-    infoBox.innerHTML = ""
-    infoBox.innerHTML += "<div>Sup</div>"
+    lootRules.setAttribute("style", "display:block")
+    members.setAttribute("style", "display:none")
 }
 
 function showRegisteredMembers(){
-    infoBox.innerHTML = ""
-    infoBox.innerHTML += "<table><tr><td>Lucella</td><td>Warrior (Prot)</td></tr></table>"
+    lootRules.setAttribute("style", "display: none;")
+    members.setAttribute("style", "display: block;")
 }
 
-window.onload = showLootRules()
+function getClassColor(characterClass){
+    switch(characterClass){
+        case "Warrior":
+            return "#C79C6E"
+        case "Warlock":
+            return "#8787ED"
+        case "Mage":
+            return "#40C7EB"
+        case "Rogue":
+            return "#FFF569"
+        case "Paladin":
+            return "#F58CBA"
+        case "Priest":
+            return "#FFFFFF"
+        case "Druid":
+            return "#FF7D0A"
+        default:
+            return "#ddd"
+    }
+}
+
+function populateMembers(){
+    let membersTable = document.getElementById('members-table')
+    membersList.forEach(mem => {
+        let classColor = getClassColor(mem.characterClass)
+        let displayedSpec = mem.spec? ` (${mem.spec})`:""
+        membersTable.innerHTML += `<tr style="color:${classColor}"><td>${mem.name}</td><td>${mem.characterClass}${displayedSpec}</td><td>${mem.guild}</td></tr>`
+    })
+}
+
+
+function init(){
+    showLootRules()
+    populateMembers()
+}
+
+window.onload = init()
