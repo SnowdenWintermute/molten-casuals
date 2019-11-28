@@ -40,11 +40,14 @@ function getClassColor(characterClass){
 
 function populateMembers(){
     let membersTable = document.getElementById('members-table')
+    let registeredNum = document.getElementById('registered-num')
+    registeredNum.innerHTML += `Registered: ${membersList.length}/40`
     membersList.forEach(mem => {
         let classColor = getClassColor(mem.characterClass)
         let displayedSpec = mem.spec? ` (${mem.spec})`:""
         membersTable.innerHTML += `<tr style="color:${classColor}"><td>${mem.name}</td><td>${mem.characterClass}${displayedSpec}</td><td>${mem.guild}</td></tr>`
     })
+
 }
 
 
