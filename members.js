@@ -23,4 +23,9 @@ let membersList = [{
     characterClass: "Mage",
     spec: "",
     guild: "Undecided"
+},{
+    name: "Angrysteel",
+    characterClass: "Paladin",
+    spec: "Holy",
+    guild: "The Seventh Hand"
 },]
