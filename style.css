@@ -15,7 +15,9 @@ body{
     display: flex;
 }
 section#main{
-    width: 500px;
+    width: 700px;
+    max-width: 95%;
+    min-height: 100vh;
     background: #333;
     margin:0 auto;
     display: inline-block;
@@ -28,7 +30,7 @@ section#main h1, h3{
 }
 .rag-img{
     width: 600px;
-    max-height: 100vh;
+    height: 400px;
     display: inline-block;
 }
 .top-btn{
@@ -67,5 +69,8 @@ th, td{
 @media only screen and (max-width: 1200px) {
     .rag-img{
         display: none;
+    }
+    section#main{
+        width: 95%;
     }
   }
