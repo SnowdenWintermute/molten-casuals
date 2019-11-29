@@ -18,4 +18,9 @@ let membersList = [{
     characterClass: "Warlock",
     spec: "",
     guild: "Tantalus"
+},{
+    name: "Stoned",
+    characterClass: "Mage",
+    spec: "",
+    guild: "Undecided"
 },]
