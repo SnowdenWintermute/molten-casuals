@@ -28,4 +28,9 @@ let membersList = [{
     characterClass: "Paladin",
     spec: "Holy",
     guild: "The Seventh Hand"
+},{
+    name: "Whitedebby",
+    characterClass: "Paladin",
+    spec: "Holy",
+    guild: "No Merit"
 },]
