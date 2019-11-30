@@ -38,9 +38,4 @@ let membersList = [{
     characterClass: "Paladin",
     spec: "Holy",
     guild: "No Merit"
-},{
-    name: "Kaethur",
-    characterClass: "Warrior",
-    spec: "Prot",
-    guild: "No Merit"
-},]
+}]
