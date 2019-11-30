@@ -14,6 +14,11 @@ let membersList = [{
     spec: "Arms",
     guild: "Tantalus"
 },{
+    name: "Kaethur",
+    characterClass: "Warrior",
+    spec: "Prot",
+    guild: "No Merit"
+},{
     name: "Hebrewhammer",
     characterClass: "Warlock",
     spec: "",
@@ -32,5 +37,10 @@ let membersList = [{
     name: "Whitedebby",
     characterClass: "Paladin",
     spec: "Holy",
+    guild: "No Merit"
+},{
+    name: "Kaethur",
+    characterClass: "Warrior",
+    spec: "Prot",
     guild: "No Merit"
 },]
